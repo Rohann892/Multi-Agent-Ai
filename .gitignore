@@ -1,1 +1,26 @@
-backend/services/Auth/serviceAccountKey.json
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+**/.env
+**/.env.*
+
+# Allow safe environment templates
+!.env.example
+!**/.env.example
+
+# Google Cloud credentials
+**/serviceAccountKey.json
+
+# Build files
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
